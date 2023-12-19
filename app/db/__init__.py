@@ -26,7 +26,7 @@ class DbConnect:
         )
         cursor = connection.cursor()
         sql = '''
-        SELECT MODELPATH FROM model_info
+        SELECT MODELPATH FROM MODEL_INFO
         WHERE MODELID = %s
         '''
         cursor.execute(sql,(modelId))
@@ -52,7 +52,7 @@ def selectUsers(uid):
         SELECT
             * 
         FROM
-            model_info 
+            MODEL_INFO 
         WHERE 
             MODELID=%s
         '''
